@@ -7,7 +7,7 @@
 
 \begin{document}
 
-\title{A Dynamical Systems Approach to Identifying and Classifying Variable and Transient Phenomena}
+\title{A Dynamical Systems Approach to Classification in Time Domain Astronomy}
 \author[0000-0001-7260-4274]{Jared Hand}
 \affiliation{
     Pittsburgh Particle Physics, Astrophysics, and Cosmology Center (PITT PACC)\\
@@ -16,123 +16,137 @@
     Pittsburgh, PA 15260, USA
 }
 
-\section{Past and Present Research}
-% First paragraph: host bias project at Pitt
-My first research project at the University of Pittsburgh sought to identify any potential dependence of measured type Ia supernova (SN~Ia) host galaxy biases on observation method (photometry versus spectroscopy, for example) and galaxy property fitting technique.  
-SN~Ia are standardizable candles, where correlation between observed properties, such as color and duration (or stretch), and peak SN~Ia brightness are exploited to reduce measured peak brightness dispersion. 
-Indeed, exploiting these empirical relations led directly to the discovery of dark energy as the dominant cosmological component driving the Universe's current accelerated expansion and its ultimate fate \citep{Riess1998,Perlmutter99}. 
-Ideally, correlations between SN~Ia and intrinsic or extrinsic modes of spectral variation are accounted for during a standardization procedure.  
-Unfortunately, established empirical relationships between host galaxy stellar mass, stellar age, and star formation rates, and peak SN~Ia brightness exist even after standardization, leading to the now-ubiquitous mass step bias \citep{Sullivan10,Rigault18}. 
-Specifically, the difference between predicted peak brightness ($\mu_{mod}(z_i)$) and standardized brightness ($\mu_i$) for some SN~Ia indexed here by $i$, referred to as the Hubble residual $\Delta \mu_i=\mu_{mod}(z_i) - \mu_i$, co-varies with host properties in a step-like fashion. 
-The host bias's sign flips post-standardization so that, in the case of host galaxy mass, intrinsically dimmer SNe~Ia occur in lower mass hosts. 
+\section{Introduction}
+SN~Ia physics and cosmology is entering a new era of unprecedented discovery rate of yet-seen Type Ia supernovae (SNe~Ia), but the tools that will be used to deliver scientific results are not keeping pace. 
+Having studied supernovae cosmology systematics and developed a new SN~Ia empirical model, I am well-versed in both the scientific utility time domain (TD) astronomy (or the study of objects that observationally change with time), and the nuance and challenges of using astronomical time series observations. 
+Next generation surveys have the potential to transform our physical understanding of TD events with their orders-of-magnitude increase in observations if and only if we can accurately and efficiently classify objects algorithmically. 
+Achieving potential scientific leaps will require an innovative classification scheme, innovation I have successfully demonstrated in my current research and propose for this 2023 NASA Hubble fellowship application: developing a novel dynamical systems model for LSST TD events and their classification.  
 
-% Second paragraph: first projec results:
-We do not know the origin of these SN~Ia hosts relationship, and a natural place to search for its source is in systematics arising from observation methodology choice or form derivation of host properties. 
-In~\cite{Hand2022}, we used a PISCO integral field spectroscopy (IFS) host observation subsample \citep{Galbany2018} with SDSS and GALEX photometric coverage \citep{Alam2018,Morrissey2007} to derive independent estimates of stellar mass and star formation rate host mass estimates. 
-We find no evidence that observation technique or fitting method biases, let alone produces, the SN~Ia host bias and subsequent mass step, with our results also being consistent with past comparisons of galaxy property estimators (see Conley~\citeyear{Conroy2013} for a review). 
+\subsection{Past Research: Understanding Supernova Cosmology Systematics}
+SN~Ia are standardizable candles such that correlation between observed properties and peak brightness can be corrected for to reduce peak brightness dispersion. 
+Exploiting these empirical relations led directly to the discovery of dark energy \citep{Riess1998,Perlmutter99}. 
+Ideally, correlations between SN~Ia and intrinsic or extrinsic modes of spectral variation are accounted for during this standardization procedure, but established empirical relationships between host galaxy stellar mass, stellar age, and star formation rates, and peak SN~Ia brightness appear after standardization in a phenomenon coined the mass step \citep{Sullivan10,Rigault18}. 
+Specifically, the difference between our best-fit cosmological model's predicted peak brightness and standardized peak brightness co-varies with host properties in a step-like fashion. 
+
+My first paper presented Professor Wood-Vasey's research group's work quantifying any influence observation method (broad-band photometry or spectroscopy) or host galaxy property fitting technique on the host bias and subsequent step biases \citep{Hand2022}. 
+Given our ignorance of the host bias and its source, considering how we observe SN~Ia is an important place to start one's search. 
+We used a PISCO SN~Ia host observation subsample \citep{Galbany2018} with SDSS and GALEX photometric coverage \citep{Alam2018,Morrissey2007} to derive independent stellar mass and star formation rate estimates. 
+We found no evidence that observation technique or fitting method biases, let alone produces, the SN~Ia host bias and subsequent mass step, and our results were also being consistent with past comparisons of galaxy property estimators (see Conley~\citeyear{Conroy2013} for a review). 
 
 % Third paragraph: SNFactory project
-In August 2019 I relocated to the Lawrence Berkeley National Laboratory to work under Dr. Alex Kim developing a new empirical SN~Ia model. 
-This project was funded by a Department of Energy Office of Science SCGSR Award I received. 
-SN~Ia theory is insufficiently developed to parametrically model intrinsic SN~Ia spectral variation, so the SN~Ia research community instead develops increasingly sophisticated empirical models trained on ever-growing photometric and spectroscopy observation sets. 
-Extrinsic SN~Ia spectral variability is largely sourced from foreground dust attenuation.  
-Dust sourced variability is phase-independent, and most SN~Ia empirical models therefore assume all phase-independent spectral variation can be modeled with a single-component effective attenuation law \citep{Jha2007,Burns2011,Mandel2022}. 
-Those that do not assume an underlying dust model in their architecture group all phase-independent variation into a single, physics-agnostic color law \citep{Guy2007,Kenworthy2021}. 
-Neither approach is satisfactory. 
-These effective dust attenuation models or agnostic color laws ignore per-SN variability in attenuation curve slope, an artificial constraint that may contribute to the mass step's size \citep{Brout2019,Popovic2021}. 
-Physical consideration alone requires at least two dust attenuation model components \citep{Weingartner2001}, and ignoring or grouping together potentially intrinsic, phase-independent variation is a shared weakness for all current SN~Ia models. 
-Separating and appropriately modeling intrinsic and extrinsic phase-independent variation will improve SN~Ia sample standardization by improving light curve fitting. 
-Such improvements are paramount for current and future SN~Ia survey utility since uncertainty in Hubble constant estimates derived from SN~Ia distance ladders is now dominated by SN~Ia model systematics. 
+\subsection{Current Research: a New Supernova Model}
+As a recipient of the 2019 Department of Energy Office of Science SCGSR Award, I relocated to the Lawrence Berkeley National Laboratory in August of that year to work under Dr.\ Alex Kim developing a new empirical SN~Ia model. 
+SN~Ia theory is insufficiently developed to provide parametric models that account for observed SN~Ia spectral variation, so the SN~Ia researchers instead develop increasingly sophisticated empirical models trained on ever-growing photometric and spectroscopy observation sets. 
+Such empirical models must account for intrinsic and extrinsic modes of SN~Ia population variability. 
+
+Extrinsic variation is variation that is independent of the progenitor or explosion physics, largely resulting from differing attenuation by dust.  
+This variability is phase-independent, and most SN~Ia empirical models assume a single-component effective attenuation curve \citep{Jha2007,Burns2011,Mandel2022}, or group all phase-independent variation (intrinsic or extrinsic) into a single template\citep{Guy2007,Kenworthy2021}. 
+Neither approach is satisfactory --- physical consideration alone requires at least two dust attenuation curves: one quantifying optical depth and the other extracting wavelength dependence \citep{Weingartner2001}. 
+Effective dust attenuation models or agnostic color laws ignore per-SN variability in attenuation curve slope, an artificial constraint that may contribute to the mass step \citep{Brout2019,Popovic2021}. 
+Cosmological parameter uncertainty derived from SN~Ia distance ladders is now dominated by SN~Ia model systematics \citep{Scolnic18}, so improvements in SN~Ia cosmology must come from improved empirical models that better account for these systematics. 
 
 % Fourth and fifth paragraph: summary of first color model paper results
-Dr. Kim and I have developed a new model that fits simultaneously two physics-agnostic phase independent color templates and a single phase-dependent variation template. 
-This model is implemented with Stan \citep{Stan} and trained using rest frame SNFactory spectrophotometric time series from \citep{Aldering2002}. 
-We make novel use of bivectors to determine our best fit model, recognizing that our two color templates form the basis of an oriented structure within a two-dimensional vector subspace. 
-We further exploit the innate geometry of our model to decompose our two-dimensional color model into consistent, physically interpretable results with a first of its kind application of geometric algebra to calculate ten-dimensional rotations, projections, and intersections. 
-Instead of extracting two dust-sourced color templates, we recover one dust-like component and one component that is a mixture of extrinsic and intrinsic features. 
-This phase-independent intrinsic variability is most noticeable around the Ca~H\%K spectral feature, a feature that exhibit relatively little change during the photospheric phase of an SN~Ia explosion. 
-Importantly, we find that phase-independent SN~Ia variation modeled from observation cannot be explained by dust alone and largely negating the narrative that host relationship step biases arise entirely from extrinsic sources \citep{Brout2019,Popovic2021}
+Dr. Kim and I developed a Stan-implemented SN~Ia model that simultaneously fits two physics-agnostic, phase-independent color templates and a single phase-dependent variation template \citep{Stan}. 
+It is trained on rest frame SNfactory spectrophotometric time series \citep{Aldering2002}, and is novel in three ways:
+\begin{itemize}
+    \item It is the first SN~Ia model architecture to successful fit two physics-agnostic, phase-independent spectral variation templates. 
+    \item We use of bivectors to determine our best fit model, recognizing that our two color templates form the vector basis of an oriented two-dimensional structure embedded within our ten-dimensional wavelength space. A bivector represents this mathematical structure. 
+    \item We exploit our model's geometry to decompose the best-fit bivector into physically interpretable results with a first-of-its-kind application of geometric algebra to perform ten-dimensional rotations, projections, and intersections. 
+\end{itemize}
+I developed and implemented the bivector representations technique and the geometric algebra application, both of which were fundamental to finally separating intrinsic and extrinsic modes of phase-independent spectral variation. 
 
-These two extracted color templates provide unprecedented capacity for us to explore dust-source variation between SNe~Ia, something that we do with a hierarchical Bayesian dust model also implemented with Stan. 
-We find that SN~Ia with phase-independent variation dominated by intrinsic modes (or intrinsic-dominated SNe~Ia) systematically fit for lower total-to-selective extinction $R_V$ values than their extrinsic-dominated counterparts. 
-This intrinsic-dominated subsample includes both nominally dust free SNe~Ia and SNe~Ia with negative fit `absolute extinction' values
-Past estimates of SN~Ia sample $R_V$ values have consistently been lower than the Milky Way average of $R_V=3.1$, and our results purport that including such intrinsic-dominated SN~Ia can bias one's effective $R_V$ estimate low. 
-More importantly, we recover different, non-Gaussian $R_V$ distributions for our both intrinsic and extrinsic-dominated subpopulations. 
+Instead of extracting two dust-sourced color templates, we recover one dust-like component and another component that is a nontrivial mixture of extrinsic and intrinsic features. 
+This phase-independent intrinsic variability is most notable around the Ca~H\&K spectral feature, a feature that exhibits relatively little time-dependence during the photospheric phase of SN~Ia explosions \citep{Branch1993,Riess1996}. 
+More importantly, in recovering effectively both intrinsic and extrinsic phase-independent variation, our results largely negates the narrative that unmodeled SN~Ia systematics results primarily from incomplete extrinsic variation modeling \citep{Brout2019}.
+
+These two extracted color templates provide us with unprecedented capacity to explore dust variation between SNe~Ia, which we study further with hierarchical Bayesian dust model also implemented with Stan. 
+We find that SN~Ia with phase-independent variation dominated by intrinsic modes (SNe~Ia with little to no dust attenuation) systematically fit for steeper attenuation curves than their extrinsic-dominated counterparts. 
+Nominally quantified with the total-to-selective ratio $R_V$, past estimates of SN~Ia effective attenuation curves have consistently been steeper than the Milky Way sight line average of $R_V=3.1$.
+Our results find having intrinsic-dominated SN~Ia in one's sample biases your effective $R_V$ estimate lower than it otherwise should be, although this does not entirely account for suspiciously low SN~Ia $R_V$ values. 
 % Plot one: L1, L2, L2 decomposed
 % Plot two: alphaV, rhoV plot
 
 % Current work:
-A paper summarizing our methodology and the above results is currently undergoing an internal review within the Nearby Supernova Factory group, but Dr. Kim and I are already developing improved model versions. 
-Our ten-band binned spectrophotometry currently used is too low resolution to quantify spectral features, so we will be training our next model with a 25-band binned spectrophotometry. 
-Furthermore, it is unclear if our previously recovered intrinsic, phase-independent variation captures spectral variation that is indeed effectively phase independent, or is instead only a time-averaged mode of phase-dependent spectral variation. 
-A comparison of our results to those of the nonlinear Twins framework and probabilistic autoencoder of~\cite{Boone2021} and~\cite{Stein2022}, respectively, hints at our recovered intrinsic, phase-independent variational mode being the former. 
-Nonetheless, two new model versions will clarify this ambiguity: a version with two phase-dependent components, and another with one phase-dependent and one phase-independent components. 
-As we clearly extracted dust-source extrinsic variation, we will also incorporate dust attenuation recipes directly into these new models' architecture. 
+A paper summarizing this new model currently undergoing internal review within the Nearby Supernova Factory group. 
+Meanwhile, Dr.\ Kim and I are increasing our model's wavelength resolution and integrating a two-component dust attenuation recipe directly into its architecture.  
+Higher resolution will enable quantification of spectral feature properties and a built-in attenuation model will help separate intrinsic phase-independent variation from its extrinsic counterpart. 
+This newer model will directly extract per-SN $R_V$ values and provide a first-ever comparison of SN-derived $R_V$ values with local environment $R_V$ estimates. 
+Any discrepancies between these $R_V$ estimations would be evidence of SN~Ia variability bleeding into recovered effective attenuation curves, furthering our understanding as to why SN~Ia `prefer' systematically low $R_V$ values. 
 
-Once these new models are trained, we will compare per-SN parameter samples to host properties. 
-Of particular interest will be a comparison per-SN fit $R_V$ values to their host's fit global $R_V$. 
-We will also analyze per-SN parameter clustering and compare to SN~Ia peculiar spectral subclass membership labels that are known a priori. 
-It will be interesting to see if per-SN dust parameters cluster correspond with SN~Ia spectral subtypes, since that would entail intrinsic SN~Ia variation is bleeding into purported extrinsic parameters values. 
-Not all SNe~Ia are standardizable candles and identifying these subtypes while simultaneously fitting light curves would be a useful tool for future surveys. 
-Indeed, accurate and efficient identification and classification of variable or transient events (not just SN~Ia subtypes) is a massively important prerequisite to any science deliverables
-This is especially true in an era of big data astronomy and with the upcoming Legacy Survey of Space and Time (LSST) from the Vera C. Rubin Observatory \citep{Zeljko2019}. 
-
-\section{Modeling Observations as Dynamical Systems}
+\section{Modeling Time-Dependent Objects as Dynamical Systems}
 % Summarize why we care about transients and variable stars (need sources?)
-Time domain (TD) astronomy will be revolutionized by LSST's predicted $\approx10^7$ transient/variable observations \textit{per night} \citep{Narayan2018}. 
-TD phenomena inform near-countless physical processes, such as variable stars and core collapse SNe (type Ib/c or II) constraining stellar interior and end-of-life stellar evolution models, respectively. 
-Section 4.3 of~\cite{Zeljko2019} summarizes many of the potential projects to be enabled by LSST TD data products. 
-An alert-broker workflow characterizing (identifying transient versus variable events) and classifying (identifying physical or empirical subtypes), followed by prompt, user-friendly discriminating and distributing of labeled TD events to scientists is a primary objective of the LSST TD working group (see Narayan~\citeyear{Narayan2018} for an example architecture). 
-Therefore, a fundamental component of LSST's alert-broker pipeline is an accurate and efficient classification procedure. 
-Past and current surveys rely on spectroscopic followup or the human eye for classification, an approach made untenable by $\approx20$~TB/night of raw data expected from LSST. 
-This leave the LSST alert-broker dependent on an algorithm-based approach utilizing machine learning.
+SN~Ia science is one part of the much larger field of time domain (TD) astronomy, a field to be revolutionized by the Vera C. Rubin Observatory Legacy Survey of Space and Time (LSST) and its expected $\approx20$~TB/night of raw observation data \textit{per night} \citep{Narayan2018,Zeljko2019}. 
+TD phenomena inform many physical processes, such as variable stars and core collapse SNe (Type Ib/c or II) constraining stellar interior and end-of-life stellar evolution models, respectively (See Section 4.3 of~\cite{Zeljko2019} for more examples). 
+TD events are characterized into two broad categories: variable objects that whose brightness continuously varies, and transient objects that undergo one phase of changing brightness. 
+Variable and transient events are further classified into physical subtypes (Mira variables versus Cepheids, supernovae versus tidal disruption events, etc.).
+LSST TD research groups are developing cloud-based alert-broker pipelines to flag TD events in the LSST data stream. 
+Alerts will then be efficiently and accurately characterized and classified followed by prompt distribution to interested research groups via the broker \citep{Narayan2018}. 
+Current surveys rely on spectroscopic followup or the human eye for classification, approached made untenable by LSST's $\approx10^7$ TD observations each night. 
+This leaves any LSST alert-broker dependent on an algorithm-based classifier. 
 
 % Summarize the challenge of photometric transient/variable identification. 
-Algorithmic TD classification from photometry relies on temporal evolution of broad-band photometric features to classify, requiring much larger training sets than spectroscopic or by-eye classification. 
-Characterization and classification is currently done separately, such as the ANTARES alert-broker framework first characterizing if an object is a transient or variable event before performing classification \citep{Narayan2018}. 
-Simultaneous characterization and classification would be preferred, simplifying one's pipeline and error propagation. 
-Measurement observation heteroskedasticity (arising from more distant objects being more difficult to observe) and missed observations (due to weather or technical issues, for example) will complicate LSST photometric time series' data structure.
-Traditional machine learning classifiers cannot easily account for these technicalities. 
-This is currently circumvented by dimensionality reduction of photometric time series via template fitting or wavelet decomposition. 
-These reduced representations then become inputs for classifiers such as boosted decision trees and neural networks (see Lochner~\citeyear{Lochner2016} and Malz~\citeyear{Malz2019} for SN classification details). 
-This separate fitting/decomposition and classification procedure again complicates the alert-broker architecture and error propagation. 
+Programmatic classifiers, including machine learning (ML) algorithms, cannot easily account LSST data products' particular structures, such as observation uncertainty heteroskedasticity (more distant objects are more difficult to detect than) and missed observations (such as weather-related delays).
+Proposed photometric classifiers circumvent this by representing photometric time series via a template model or wavelet decomposition dimensionality reduction \citep{Malz2019}. 
+The reduced representation features then serve as inputs for a classifier algorithm (see Lochner~\citeyear{Lochner2016} for SN-specific transient classification details). 
+There is ample room for improvement over current representations and subsequent classification, with an example being stripped envelope core-collapse SNe classification false negative rates of $\approx10\%$ \citep{Malz2019}. 
+This will then lead to LSST SN~Ia cosmology sample contamination by core-collapse SN, reducing per-SN statistical weight in deriving cosmology parameters. 
 
-Template fittings compare TD observations against SN~Ia empirical models that themselves are incomplete while being also sensitive to template training data (which, right now, is necessarily different from LSST's eventual SN~Ia coverage). 
-Furthermore, these current classification schemes struggle to accurately identify stripped envelope core collapse SNe, leading to false positive/negative errors that degrade LSST data product utility. 
-For example, core collapse SN contamination in cosmology-ready photometric SN~Ia samples reduces per-SN statistical weight in deriving cosmology parameter estimation. 
-Wavelet decomposition, although physics agnostic, is consistently less accurate than template-based algorithms \citep{Malz2019}. 
+Current TD representations fail to properly model TD observations, which are capturing snapshots of fundamentally dynamical processes. 
+Furthermore, photometric TD classification relies heavily on how an object's flux changes with time, so representation features should be derived from a dynamical systems approach. 
+Such an improved TD event representation better capturing dynamical properties may not only improve classification performance, but be a powerful tool to study individual events themselves, especially yet-seen phenomena that LSST surely will discover. 
+It is such improvements I believe can be reached with data-driven, dynamical systems approach called dynamics discovery. 
 
-% Explain why we should treat these as dynamical systems
-More fundamentally, these staggered workflows ignore the dynamics of the light curve. 
-TD objects have nonzero flux `velocity' which is effectively ignored in current alert-broker pipelines. 
-My research proposal will rectify this issue in a unified characterization/classification framework by modeling TD flux evolution as a dynamical system. 
-The dynamics of different transient or variables will be functionally distinguishable once discovered using machine learning. 
-Moreover, such a framework naturally quantifies different timescales, even in the case of unsupervised learning. 
+\subsection{A Dynamics Discovery Approach to TD Classification and Dimensionality Reduction}
+LSST will observe the night sky with six photometric filters \textit{ugrizy} each centered at different effective wavelengths. 
+Consider a single set of flux values for some TD event as a six-component vector $\mathbf{F}$, each corresponding to one of the mentioned photometric filters. 
+For TD events, this vector's components each vary with time, so $\dot{\mathbf{F}}\neq 0$. 
+In this application, dynamics discovery promotes this flux derivative to a differential equation $\dot{\mathbf{F}} = g(\mathbf{F}, t|\mathbf{\Theta})$ and discovers from data the functional form of the unknown function $g(\mathbf{F}, t|\mathbf{\Theta})$ that describes the evolution of the $\mathbf{F}$. 
+Here, $\theta \in \mathbf{\Theta}$ parameterize the discovered dynamics. 
+LSST TD observations will provide the noisy `snapshots' from which the dynamics are determined via machine learning. 
+Each event can be characterized as variable or transient based directly on the discovered dynamics, while extracted dynamics parameters and subsequently derived properties can be the features for an improved TD classifier. 
+Dynamics discover also exploits the timescales from observations like wavelet decomposition, but it also directly exploits the data's estimated derivatives in its dimensionality reduction procedure. 
+Unlike template model classifiers, this technique is physics-agnostic and will not be sensitive to template-related systematics. 
 
-% Summarize proposed dynamical system workflow
-% plot 3: dynamical system model workflow
-% - Two components: data representation and vector field discovery
-% - Centering data: Gaussian processes
-Two simultaneous models need to be trained in dynamical systems discover: a  trained representation of one's dynamical system observations $\mathcal{O}$, and a trained representation of the vector field $\mathcal{V}$ inscribing the discovered dynamics. 
-Both $\mathcal{O}$ and $\mathcal{V}$ should be trained simultaneously, informing the other. 
-An added structure labeling each event needs to be incorporated as well. 
-Furthermore, the data representation $\mathcal{O}$ must center observations to a temporal zero-point. 
-For example, SN observation series should be centered to an agreed phase, such as the phase of maximum brightness. 
-We faced a similar issue 
+Dynamics discovery models an implicit representation $\mathcal{F}$ of each TD event such that $\mathcal{F}(t_i)\approx\mathbf{F}^*(t_i)$ for observation time $t_i$ of observation $\mathbf{F}^*(t_i)$. 
+The dynamics $g(\mathbf{F}, t|\mathbf{\Theta})$ of the TD event is simultaneously modeled with a representation $\mathcal{G}$. 
+$\mathcal{F}$ is found by minimizing the loss between observations and their implicit representation, while $\mathcal{G}$ is found by minimizing loss between $\mathcal{F}$ derivatives and the modeled dynamics. 
+$\mathcal{F}$ and $\mathcal{F}$ are further coupled with an additional loss component that compares predicted time-integrated evolution to the implicit representation expected value. 
+Section~3 of~\cite{Goyal2022} summarizes this workflow with a purely NN implementation. 
+The simultaneous training of representations $\mathcal{F}$ and $\mathcal{G}$ is also not tied to a particular machine learning technique (see~\cite{Raissi2018} for a purely Gaussian process (GP) alternative.)
 
-% Explain benefits over existing techniques
-% - Simultaneous training and classification (no need to template fits a priori)
-% - Natural separation of variable (stead state) and transient (transient) events
-% - Physically interpretable: timescales and periodicity naturally accounted for 
-% - Flux velocity information directly utilized (relates to timescales)
-% - Nonlinear: nonlinear ODE discovery from data is established
-% - Innovative, but low risk: Dynamical systems abstraction a new concept, but tools are well developed
+Data-driven dynamics discovery and modeling is well-developed field of study, but has never been applied to astronomical observations directly. 
+This proposed TD classification proposal is not only innovative, but will be relatively straightforward to implement. 
+Indeed, I am in contact with Dr.\ Mattia Cenedese at ETH Zürich to discuss how to extend their nonlinear spectral submanifold learning techniques to LSST TD data \citep{Cenedese2022}. 
 
+\subsection{LSST Dynamics Discovery Project Sequence}
+There are two specific deliverables expected by this project: a dynamics discovery representation of TD events, and a subsequent classifier using said representation's features as inputs. 
+Year one will focus first on developing the architecture for the implicit and dynamics representations $\mathcal{F}$ and $\mathcal{G}$, respectively. 
+Implementing $\mathcal{F}$ with GPs has the particular advantage of simplifying error propagation. 
+The derivative of an GP is, by definition, another GP, which would again simplifies flux derivative estimation. 
+GP scalability is hindered by potentially costly matrix inversion calculations, though, so selecting a GP and NN architecture for $\mathcal{F}$ after comparison of results will be an important milestone to be reached that first year. 
+The first year will see $\mathcal{G}$'s architecture developed and then testing the full dynamics discovery model on simulated LSST data \citep{Malz2019}.
 
+By the beginning of the second year, a dynamics discovery feature classifier should be selected using accuracy and efficiency metrics summarized in~\cite{Malz2019}.  
+Assuming a dynamics discovery representation improves characterization and TD feature classification, the second year will initially focus on integrating the proposed methodology into LSST alert-brokers. 
+Integrating the dynamics discovery methodology into LSST's LINCC Framework as an end-user software deliverable will be another important objective for the second year.
+
+If time permits, year three can be spent developing a generative dynamics discovery mixture model for characterized TD events. 
+Such a model would simultaneously fit numerous generative models, each corresponding to the dynamics of the sample's subpopulations. 
+This ambitious model would be made feasible from the massive amount of data expected from LSST. 
+Indeed, tens of thousands of TD events will be observed by LSST, each which can be used to develop this model. 
+
+\subsection{Why Carnegie Mellon University?}
 % Why CMU?
 % - Project will provide deliverable: TD classifier broker
-% - Interdisciplinary data science department: Chad is part of LSST, etc.
+% - Interdisciplinary data science department: Chad sdfis part of LSST, etc.
 % - LINCC hub: rapid and appropriate integration of new broker into LSST software stack
+Carnegie Mellon University (CMU) is home to the McWilliams Center for Cosmology with professors holding leadership positions in LSST's Dark Energy Science Collaboration. 
+CMU is a hub and founding member of the LINCC framework, a program developing the software and data management infrastructure needed to address the unprecedented scale and complexity LSST's data products. 
+LINCC will be a collaboration between software engineers, data scientists collaborate, and research scientists to develop scalable and deployable software tools within a cloud-based framework for widespread scientific use. 
+CMU's Statistics and Data Science department is actively involved in LINCC, helping develop and implement the machine learning algorithms necessary for LSST's delivery of usable products. 
+A dynamics discovery methodology would be a tool to be implemented into the LINCC Framework, and my presence at CMU will facilitate its integration. 
+University of Pittsburgh faculty also hold important LSST-DESC leadership positions and is closely connected with CMU's LINCC initiatives, being particularly focused on LSST's TD science pipeline development. 
+Furthermore, Professor Wood-Vasey's research group at the University of Pittsburgh is developing a candidate LSST alert-broker in collaboration with Google, and my being at CMU provides the proximity to more effectively integrate a dynamics discovery classifier into their pipeline. 
 
 \bibliography{HF_2023}{}
 \bibliographystyle{aasjournal}

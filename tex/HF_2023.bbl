@@ -68,15 +68,9 @@
   Survey and Other Telescope Technologies and Discoveries, ed. J.~A. {Tyson} \&
   S.~{Wolff}, 61--72, \dodoi{10.1117/12.458107}
 
-\bibitem[{{Boone} {et~al.}(2021){Boone}, {Aldering}, {Antilogus}, {Aragon},
-  {Bailey}, {Baltay}, {Bongard}, {Buton}, {Copin}, {Dixon}, {Fouchez},
-  {Gangler}, {Gupta}, {Hayden}, {Hillebrandt}, {Kim}, {Kowalski},
-  {K{\"u}sters}, {L{\'e}get}, {Mondon}, {Nordin}, {Pain}, {Pecontal},
-  {Pereira}, {Perlmutter}, {Ponder}, {Rabinowitz}, {Rigault}, {Rubin}, {Runge},
-  {Saunders}, {Smadja}, {Suzuki}, {Tao}, {Taubenberger}, {Thomas}, \&
-  {Vincenzi}}]{Boone2021}
-{Boone}, K., {Aldering}, G., {Antilogus}, P., {et~al.} 2021, \apj, 912, 70,
-  \dodoi{10.3847/1538-4357/abec3c}
+\bibitem[{{Branch} {et~al.}(1993){Branch}, {Fisher}, \& {Nugent}}]{Branch1993}
+{Branch}, D., {Fisher}, A., \& {Nugent}, P. 1993, \aj, 106, 2383,
+  \dodoi{10.1086/116810}
 
 \bibitem[{{Brout} {et~al.}(2019){Brout}, {Scolnic}, {Kessler}, {D'Andrea},
   {Davis}, {Gupta}, {Hinton}, {Kim}, {Lasker}, {Lidman}, {Macaulay},
@@ -113,6 +107,12 @@
 Carpenter, B., Gelman, A., Hoffman, M.~D., {et~al.} 2017, Journal of
   statistical software, 76
 
+\bibitem[{{Cenedese} {et~al.}(2022){Cenedese}, {Ax{\r{a}}s}, {Yang}, {Eriten},
+  \& {Haller}}]{Cenedese2022}
+{Cenedese}, M., {Ax{\r{a}}s}, J., {Yang}, H., {Eriten}, M., \& {Haller}, G.
+  2022, Philosophical Transactions of the Royal Society of London Series A,
+  380, 20210194, \dodoi{10.1098/rsta.2021.0194}
+
 \bibitem[{{Conroy}(2013)}]{Conroy2013}
 {Conroy}, C. 2013, \araa, 51, 393, \dodoi{10.1146/annurev-astro-082812-141017}
 
@@ -123,6 +123,10 @@ Carpenter, B., Gelman, A., Hoffman, M.~D., {et~al.} 2017, Journal of
   {V{\'\i}lchez}, {Garc{\'\i}a-Benito}, \& {Marino}}]{Galbany2018}
 {Galbany}, L., {Anderson}, J.~P., {S{\'a}nchez}, S.~F., {et~al.} 2018, \apj,
   855, 107, \dodoi{10.3847/1538-4357/aaaf20}
+
+\bibitem[{{Goyal} \& {Benner}(2022)}]{Goyal2022}
+{Goyal}, P., \& {Benner}, P. 2022, arXiv e-prints, arXiv:2205.09479.
+\newblock \doarXiv{2205.09479}
 
 \bibitem[{{Guy} {et~al.}(2007){Guy}, {Astier}, {Baumont}, {Hardin}, {Pain},
   {Regnault}, {Basa}, {Carlberg}, {Conley}, {Fabbro}, {Fouchez}, {Hook},
@@ -247,10 +251,18 @@ Carpenter, B., Gelman, A., Hoffman, M.~D., {et~al.} 2017, Journal of
   arXiv e-prints, arXiv:2102.01776.
 \newblock \doarXiv{2102.01776}
 
+\bibitem[{{Raissi} \& {Karniadakis}(2018)}]{Raissi2018}
+{Raissi}, M., \& {Karniadakis}, G.~E. 2018, Journal of Computational Physics,
+  357, 125, \dodoi{10.1016/j.jcp.2017.11.039}
+
 \bibitem[{{Riess} {et~al.}(1998){Riess}, {Nugent}, {Filippenko}, {Kirshner}, \&
   {Perlmutter}}]{Riess1998}
 {Riess}, A.~G., {Nugent}, P., {Filippenko}, A.~V., {Kirshner}, R.~P., \&
   {Perlmutter}, S. 1998, \apj, 504, 935, \dodoi{10.1086/306106}
+
+\bibitem[{{Riess} {et~al.}(1996){Riess}, {Press}, \& {Kirshner}}]{Riess1996}
+{Riess}, A.~G., {Press}, W.~H., \& {Kirshner}, R.~P. 1996, \apj, 473, 88,
+  \dodoi{10.1086/178129}
 
 \bibitem[{{Rigault} {et~al.}(2020){Rigault}, {Brinnel}, {Aldering},
   {Antilogus}, {Aragon}, {Bailey}, {Baltay}, {Barbary}, {Bongard}, {Boone},
@@ -263,16 +275,15 @@ Carpenter, B., Gelman, A., Hoffman, M.~D., {et~al.} 2017, Journal of
 {Rigault}, M., {Brinnel}, V., {Aldering}, G., {et~al.} 2020, \aap, 644, A176,
   \dodoi{10.1051/0004-6361/201730404}
 
-\bibitem[{{Stein} {et~al.}(2022){Stein}, {Seljak}, {Bohm}, {Aldering},
-  {Antilogus}, {Aragon}, {Bailey}, {Baltay}, {Bongard}, {Boone}, {Buton},
-  {Copin}, {Dixon}, {Fouchez}, {Gangler}, {Gupta}, {Hayden}, {Hillebrandt},
-  {Karmen}, {Kim}, {Kowalski}, {Kusters}, {Leget}, {Mondon}, {Nordin}, {Pain},
-  {Pecontal}, {Pereira}, {Perlmutter}, {Ponder}, {Rabinowitz}, {Rigault},
-  {Rubin}, {Runge}, {Saunders}, {Smadja}, {Suzuki}, {Tao}, {Thomas}, \&
-  {Vincenzi}}]{Stein2022}
-{Stein}, G., {Seljak}, U., {Bohm}, V., {et~al.} 2022, arXiv e-prints,
-  arXiv:2207.07645.
-\newblock \doarXiv{2207.07645}
+\bibitem[{{Scolnic} {et~al.}(2018){Scolnic}, {Jones}, {Rest}, {Pan},
+  {Chornock}, {Foley}, {Huber}, {Kessler}, {Narayan}, {Riess}, {Rodney},
+  {Berger}, {Brout}, {Challis}, {Drout}, {Finkbeiner}, {Lunnan}, {Kirshner},
+  {Sand ers}, {Schlafly}, {Smartt}, {Stubbs}, {Tonry}, {Wood-Vasey}, {Foley},
+  {Hand}, {Johnson}, {Burgett}, {Chambers}, {Draper}, {Hodapp}, {Kaiser},
+  {Kudritzki}, {Magnier}, {Metcalfe}, {Bresolin}, {Gall}, {Kotak}, {McCrum}, \&
+  {Smith}}]{Scolnic18}
+{Scolnic}, D.~M., {Jones}, D.~O., {Rest}, A., {et~al.} 2018, \apj, 859, 101,
+  \dodoi{10.3847/1538-4357/aab9bb}
 
 \bibitem[{Sullivan {et~al.}(2010)Sullivan, Conley, Howell, Neill, Astier,
   Balland, Basa, Carlberg, Fouchez, Guy, Hardin, Hook, Pain,

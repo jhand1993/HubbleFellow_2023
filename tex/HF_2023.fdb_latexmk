@@ -1,15 +1,17 @@
 # Fdb version 3
-["bibtex HF_2023"] 1666207751 "HF_2023.aux" "HF_2023.bbl" "HF_2023" 1666215852
+["bibtex HF_2023"] 1666828179 "HF_2023.aux" "HF_2023.bbl" "HF_2023" 1666828368
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/aastex/aasjournal.bst" 1565209774 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "HF_2023.aux" 1666215852 15561 3eeaa697cbdebb6c6e04bae5b985f990 "pdflatex"
-  "HF_2023.bib" 1666207327 259031 2f1bc8bbf3df91400ac9139344794f8a ""
+  "HF_2023.aux" 1666828368 16378 f81c30b5fec1060412eecf8a0ada6c66 "pdflatex"
+  "HF_2023.bib" 1666369894 262300 21fef7e894b47b5f129ee5260d162ec0 ""
   (generated)
   "HF_2023.bbl"
   "HF_2023.blg"
-["pdflatex"] 1666215851 "/Users/jaredhand/Documents/career/HubbleFellow_2023/tex/HF_2023.tex" "HF_2023.pdf" "HF_2023" 1666215852
-  "/Users/jaredhand/Documents/career/HubbleFellow_2023/tex/HF_2023.tex" 1666215851 15608 a3e1addc252a25ba2338d9439c8582dc ""
+["pdflatex"] 1666828367 "/Users/jaredhand/Documents/career/HubbleFellow_2023/tex/HF_2023.tex" "HF_2023.pdf" "HF_2023" 1666828368
+  "/Users/jaredhand/Documents/career/HubbleFellow_2023/tex/HF_2023.tex" 1666828367 19141 f137916e520d8b052c769994779eb60c ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -20,6 +22,8 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm" 1136768653 1344 8a0be4fe4d376203000810ad4dc81558 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1136768653 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -50,8 +54,10 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -123,10 +129,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1658767232 4595694 b76fcd149e7cf352cfe61a349f6f47d6 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1658767248 2864974 9191f20d78a1f152418563630b116eea ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "HF_2023.aux" 1666215852 15561 3eeaa697cbdebb6c6e04bae5b985f990 "pdflatex"
-  "HF_2023.bbl" 1666207751 17659 d2b7636a192cdcb0a8cd128e171a11bf "bibtex HF_2023"
-  "HF_2023.out" 1666215852 442 c62aeb61688e9fa059c622a0cecdf086 "pdflatex"
-  "HF_2023.tex" 1666215851 15608 a3e1addc252a25ba2338d9439c8582dc ""
+  "HF_2023.aux" 1666828368 16378 f81c30b5fec1060412eecf8a0ada6c66 "pdflatex"
+  "HF_2023.bbl" 1666828180 18070 077dbf1c747d9d9325720356fd245b7e "bibtex HF_2023"
+  "HF_2023.out" 1666828368 2029 bb849a78f1a7d55b458adfe7bcead9ed "pdflatex"
+  "HF_2023.tex" 1666828367 19141 f137916e520d8b052c769994779eb60c ""
   (generated)
   "HF_2023.aux"
   "HF_2023.log"
