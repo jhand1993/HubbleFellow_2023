@@ -5,6 +5,27 @@
 \providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
 \providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
 
+\bibitem[{{Akeson} {et~al.}(2019){Akeson}, {Armus}, {Bachelet}, {Bailey},
+  {Bartusek}, {Bellini}, {Benford}, {Bennett}, {Bhattacharya}, {Bohlin},
+  {Boyer}, {Bozza}, {Bryden}, {Calchi Novati}, {Carpenter}, {Casertano},
+  {Choi}, {Content}, {Dayal}, {Dressler}, {Dor{\'e}}, {Fall}, {Fan}, {Fang},
+  {Filippenko}, {Finkelstein}, {Foley}, {Furlanetto}, {Kalirai}, {Gaudi},
+  {Gilbert}, {Girard}, {Grady}, {Greene}, {Guhathakurta}, {Heinrich},
+  {Hemmati}, {Hendel}, {Henderson}, {Henning}, {Hirata}, {Ho}, {Huff},
+  {Hutter}, {Jansen}, {Jha}, {Johnson}, {Jones}, {Kasdin}, {Kelly}, {Kirshner},
+  {Koekemoer}, {Kruk}, {Lewis}, {Macintosh}, {Madau}, {Malhotra}, {Mandel},
+  {Massara}, {Masters}, {McEnery}, {McQuinn}, {Melchior}, {Melton},
+  {Mennesson}, {Peeples}, {Penny}, {Perlmutter}, {Pisani}, {Plazas}, {Poleski},
+  {Postman}, {Ranc}, {Rauscher}, {Rest}, {Roberge}, {Robertson}, {Rodney},
+  {Rhoads}, {Rhodes}, {Ryan}, {Sahu}, {Sand}, {Scolnic}, {Seth}, {Shvartzvald},
+  {Siellez}, {Smith}, {Spergel}, {Stassun}, {Street}, {Strolger}, {Szalay},
+  {Trauger}, {Troxel}, {Turnbull}, {van der Marel}, {von der Linden}, {Wang},
+  {Weinberg}, {Williams}, {Windhorst}, {Wollack}, {Wu}, {Yee}, \&
+  {Zimmerman}}]{Akeson2019}
+{Akeson}, R., {Armus}, L., {Bachelet}, E., {et~al.} 2019, arXiv e-prints,
+  arXiv:1902.05569.
+\newblock \doarXiv{1902.05569}
+
 \bibitem[{{Alam} {et~al.}(2015){Alam}, {Albareti}, {Allende Prieto}, {Anders},
   {Anderson}, {Anderton}, {Andrews}, {Armengaud}, {Aubourg}, {Bailey}, {Basu},
   {Bautista}, {Beaton}, {Beers}, {Bender}, {Berlind}, {Beutler}, {Bhardwaj},
@@ -58,16 +79,6 @@
 {Alam}, S., {Albareti}, F.~D., {Allende Prieto}, C., {et~al.} 2015, \apjs, 219,
   12, \dodoi{10.1088/0067-0049/219/1/12}
 
-\bibitem[{{Aldering} {et~al.}(2002){Aldering}, {Adam}, {Antilogus}, {Astier},
-  {Bacon}, {Bongard}, {Bonnaud}, {Copin}, {Hardin}, {Henault}, {Howell},
-  {Lemonnier}, {Levy}, {Loken}, {Nugent}, {Pain}, {Pecontal}, {Pecontal},
-  {Perlmutter}, {Quimby}, {Schahmaneche}, {Smadja}, \&
-  {Wood-Vasey}}]{Aldering2002}
-{Aldering}, G., {Adam}, G., {Antilogus}, P., {et~al.} 2002, in Society of
-  Photo-Optical Instrumentation Engineers (SPIE) Conference Series, Vol. 4836,
-  Survey and Other Telescope Technologies and Discoveries, ed. J.~A. {Tyson} \&
-  S.~{Wolff}, 61--72, \dodoi{10.1117/12.458107}
-
 \bibitem[{{Branch} {et~al.}(1993){Branch}, {Fisher}, \& {Nugent}}]{Branch1993}
 {Branch}, D., {Fisher}, A., \& {Nugent}, P. 1993, \aj, 106, 2383,
   \dodoi{10.1086/116810}
@@ -113,8 +124,13 @@ Carpenter, B., Gelman, A., Hoffman, M.~D., {et~al.} 2017, Journal of
   2022, Philosophical Transactions of the Royal Society of London Series A,
   380, 20210194, \dodoi{10.1098/rsta.2021.0194}
 
-\bibitem[{{Conroy}(2013)}]{Conroy2013}
-{Conroy}, C. 2013, \araa, 51, 393, \dodoi{10.1146/annurev-astro-082812-141017}
+\bibitem[{{Dekany} {et~al.}(2020){Dekany}, {Smith}, {Riddle}, {Feeney},
+  {Porter}, {Hale}, {Zolkower}, {Belicki}, {Kaye}, {Henning}, {Walters},
+  {Cromer}, {Delacroix}, {Rodriguez}, {Reiley}, {Mao}, {Hover}, {Murphy},
+  {Burruss}, {Baker}, {Kowalski}, {Reif}, {Mueller}, {Bellm}, {Graham}, \&
+  {Kulkarni}}]{Dekany2020}
+{Dekany}, R., {Smith}, R.~M., {Riddle}, R., {et~al.} 2020, \pasp, 132, 038001,
+  \dodoi{10.1088/1538-3873/ab4ca2}
 
 \bibitem[{{Galbany} {et~al.}(2018){Galbany}, {Anderson}, {S{\'a}nchez},
   {Kuncarayakti}, {Pedraz}, {Gonz{\'a}lez-Gait{\'a}n}, {Stanishev},
@@ -203,10 +219,10 @@ Carpenter, B., Gelman, A., Hoffman, M.~D., {et~al.} 2017, Journal of
 {Kenworthy}, W.~D., {Jones}, D.~O., {Dai}, M., {et~al.} 2021, \apj, 923, 265,
   \dodoi{10.3847/1538-4357/ac30d8}
 
-\bibitem[{{Lochner} {et~al.}(2016){Lochner}, {McEwen}, {Peiris}, {Lahav}, \&
-  {Winter}}]{Lochner2016}
-{Lochner}, M., {McEwen}, J.~D., {Peiris}, H.~V., {Lahav}, O., \& {Winter},
-  M.~K. 2016, \apjs, 225, 31, \dodoi{10.3847/0067-0049/225/2/31}
+\bibitem[{{Mai} {et~al.}(2016){Mai}, {Shattuck}, \& {O'Hern}}]{Mai2016}
+{Mai}, M., {Shattuck}, M.~D., \& {O'Hern}, C.~S. 2016, arXiv e-prints,
+  arXiv:1605.05420.
+\newblock \doarXiv{1605.05420}
 
 \bibitem[{{Malz} {et~al.}(2019){Malz}, {Hlo{\v{z}}ek}, {Allam}, {Bahmanyar},
   {Biswas}, {Dai}, {Galbany}, {Ishida}, {Jha}, {Jones}, {Kessler}, {Lochner},
@@ -251,6 +267,10 @@ Carpenter, B., Gelman, A., Hoffman, M.~D., {et~al.} 2017, Journal of
   arXiv e-prints, arXiv:2102.01776.
 \newblock \doarXiv{2102.01776}
 
+\bibitem[{Raen(2022)}]{Raen2022}
+Raen, T. 2022.
+\newblock \url{http://d-scholarship.pitt.edu/43428/}
+
 \bibitem[{{Raissi} \& {Karniadakis}(2018)}]{Raissi2018}
 {Raissi}, M., \& {Karniadakis}, G.~E. 2018, Journal of Computational Physics,
   357, 125, \dodoi{10.1016/j.jcp.2017.11.039}
@@ -259,10 +279,6 @@ Carpenter, B., Gelman, A., Hoffman, M.~D., {et~al.} 2017, Journal of
   {Perlmutter}}]{Riess1998}
 {Riess}, A.~G., {Nugent}, P., {Filippenko}, A.~V., {Kirshner}, R.~P., \&
   {Perlmutter}, S. 1998, \apj, 504, 935, \dodoi{10.1086/306106}
-
-\bibitem[{{Riess} {et~al.}(1996){Riess}, {Press}, \& {Kirshner}}]{Riess1996}
-{Riess}, A.~G., {Press}, W.~H., \& {Kirshner}, R.~P. 1996, \apj, 473, 88,
-  \dodoi{10.1086/178129}
 
 \bibitem[{{Rigault} {et~al.}(2020){Rigault}, {Brinnel}, {Aldering},
   {Antilogus}, {Aragon}, {Bailey}, {Baltay}, {Barbary}, {Bongard}, {Boone},
